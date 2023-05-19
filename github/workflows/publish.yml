@@ -9,7 +9,7 @@ jobs:
        uses: docker/login-action@v1
        with:
         registry: ghcr.io
-        username: ${{ github.actor }}
+        username: NonMoontip
         password: ${{ secrets.GITHUB_TOKEN }}
       -name: Build the angular-docker Docker image
       run:
