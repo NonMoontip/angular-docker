@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<div class="layout">
+    <div class="navbar">
+        <app-header></app-header>
+        <button (click)="toggle = !toggle">open</button>
+    </div>
+    <div class="area">
+        <div class="slide-bar" [class.slide]="toggle">
+            <app-slide-bar></app-slide-bar>
+        </div>
+        <div class="content"  [class.slide-content]="toggle">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

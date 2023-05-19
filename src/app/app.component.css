@@ -1,0 +1,38 @@
+.layout{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+.navbar button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.area .slide-bar{
+    width: 20%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.area .slide{
+    transform: translate(-100% , 0);
+}
+.area .content{
+    background-color: yellow;
+    width: 80%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+.area .slide-content{
+    transform: translate(-10% , 0);
+    width: 100%;
+}
